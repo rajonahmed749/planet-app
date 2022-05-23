@@ -10,7 +10,6 @@ const BASE = {
 
 const BASE_BOLD = {
     fontFamily: typography.primaryBold,
-    fontSize: 16,
     color: colors.white
 }
 
