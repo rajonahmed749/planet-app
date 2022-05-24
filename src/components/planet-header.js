@@ -7,7 +7,7 @@ import { AntDesign } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 
 const PlanetHeader = ({ BackBtn, title = "THE PLANET" }) => {
-    const navigation = useNavigation()
+    const navigation = useNavigation()  // react navigation er ekta hook jar maddhome navigate kora jay 
     return (
         <View style={styles.container}>
             {BackBtn && (

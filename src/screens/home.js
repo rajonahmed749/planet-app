@@ -13,14 +13,14 @@ const Home = ({ navigation }) => {
             <PlanetHeader />
             <FlatList
                 contentContainerStyle={styles.list}
-                data={PLANET_LIST}
-                keyExtractor={(item, index) => item.name}
+                data={PLANET_LIST} // puro array ta pacchi data er moddhe
+                keyExtractor={(item, index) => item.name} // unique key 
                 renderItem={({ item, index }) => {
                     const { name, color } = item;
                     return (
                         <Pressable
                             onPress={() => {
-                                navigation.navigate('Details')
+                                navigation.navigate('Details', { planet: item }) // default hisebe ekta naviagtion props hisebe pawa jay & planet er moddhe item gula ke pass kore dilam details page a 
                             }}
                             style={styles.item}>
                             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
